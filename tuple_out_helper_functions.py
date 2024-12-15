@@ -9,6 +9,10 @@ def roll_dice():
 def reroll_decision(player_name, rolls, fixed_dice):
     # get the indices of fixed dice
     fixed_indices = []
+
+    # Can you explain what the following line does?
+    # What is "in enumerate(rolls)"?
+
     for index, roll in enumerate(rolls):
         if roll in fixed_dice:
             fixed_indices.append(index)
